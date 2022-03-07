@@ -2,18 +2,19 @@
 using namespace std;
 class S
 {
-	int a,b,sum;
 	public:
-	S(int x, int y)
-	{
+		int a,b,sum;
+	public:
+		S(int x, int y)
+			{
 	
-  		a=x;
-  		b=y;
-  		sum=a+b;
-		cout <<"The sum is "<<sum;
-	
-	}
-		~S();
+				a=x;
+				b=y;
+				sum=a+b;
+				cout <<"The sum is "<<sum;
+			
+			}
+}
 
 };
 int main(){
