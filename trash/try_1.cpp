@@ -31,6 +31,7 @@ int main()
 {
 	
 	int i=0;
+	string name;
 	Employee *emp;
 	for(i=0;i<10;i++)
 	{
