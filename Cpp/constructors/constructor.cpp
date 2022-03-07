@@ -14,9 +14,8 @@ class S
 				cout <<"The sum is "<<sum;
 			
 			}
-}
-
 };
+
 int main(){
 	S obj(3,4);
 	//obj.add(0,0);
