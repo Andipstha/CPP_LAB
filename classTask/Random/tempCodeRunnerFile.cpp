@@ -5,7 +5,7 @@ class x{
 	
 	int b;
 	public:
-			int input(int b){
+			input(int b){
 				string name;
 				int salary;
 				cout<<"Enter the name of the employeee"<<endl;
@@ -18,17 +18,8 @@ class x{
 			}
 };
 int main(){
-	int i=0;
-	for(i=0;i<=5;i++){
-		string name;
-				int salary;
-				cout<<"Enter the name of the employeee"<<endl;
-				getline(cin,name);
-				fflush(stdin);
-				cout<<"Enter the salary"<<endl;
-				cin>>salary;
-				fflush(stdin);
-	}
+	x obj;
+	obj.input(0);
  
 return 0;
 }
