@@ -64,5 +64,6 @@ int main()
 	}
 	obj2=output(obj,y);
 	obj2.details();
+	return 0;
 
 }

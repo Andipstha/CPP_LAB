@@ -25,12 +25,12 @@ class Employee
 			
 		}
 		Employee compare(employee,enployee){
-			int temp,i;
+			int i; 
 			for(i=0;i<=1;i++){
 				if(obj[i].salary<obj[i+1].salary){
-					temp=obj[i+1];
+					x=obj[i+1];
 					obj[i+1]=obj[i];
-					obj[i]=temp;
+					obj[i]=x;
 
 				}
 			}
@@ -46,6 +46,7 @@ class Employee
 };
 int main(){
 	Employee obj[2];
+	Employee x;
 	int a=0;
 	int i=0;
 	for(i=0;i<=1;i++){

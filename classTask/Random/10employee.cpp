@@ -17,15 +17,16 @@ class Employee
 			cin>>id;
             fflush(stdin);
 			cout<<"\n Enter Employee Name:";
-            getline(cin,name;)
+            getline(cin,name);
             fflush(stdin);
 			cout<<"\n Enter Salary:";
             cin>>salary;
             fflush(stdin);
 			
 		}
-		Employee compare(employee,enployee){
-			int temp,i;
+		friend Employee compare(employee,employee){
+			int i;
+			Employee temp;
 			for(i=0;i<=1;i++){
 				if(obj[i].salary<obj[i+1].salary){
 					temp=obj[i+1];
@@ -37,10 +38,10 @@ class Employee
 			return obj[0];
 		}
 		void display(){
-			cout<<"The details of the student is:-";
-			cout<<"NAME:-"<<name;
-			cout<<"ID:-"<<id;
-			cout<<"Salary:-"<<salary;
+			cout<<"The details of the student is:-"<<endl;
+			cout<<"NAME:-"<<name<<endl;
+			cout<<"ID:-"<<id<<endl;
+			cout<<"Salary:-"<<salary<<endl;
 			
 		}
 };
@@ -51,10 +52,10 @@ int main(){
 	for(i=0;i<=1;i++){
 		obj[i].getdata();
 	}
-for(i=0;i<=1;i++){
-	obj[i].compare(obj[i],obj[i+1]);
-}
-obj[0].display();
+	for(i=0;i<=1;i++){
+		obj[0]=compare(obj[i],obj[i+1]);
+	}
+	obj[0].display();
 
 return 0;
 }
