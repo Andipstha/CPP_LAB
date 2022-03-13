@@ -24,18 +24,18 @@ class Employee
             fflush(stdin);
 			
 		}
-		friend Employee compare(employee,employee){
+		friend Employee compare(Employee obj2[]){
 			int i;
 			Employee temp;
 			for(i=0;i<=1;i++){
-				if(obj[i].salary<obj[i+1].salary){
-					temp=obj[i+1];
-					obj[i+1]=obj[i];
-					obj[i]=temp;
+				if(obj2[i].salary<obj2[i+1].salary){
+					temp=obj2[i+1];
+					obj2[i+1]=obj2[i];
+					obj2[i]=temp;
 
 				}
 			}
-			return obj[0];
+			return obj2[i];
 		}
 		void display(){
 			cout<<"The details of the student is:-"<<endl;
@@ -52,9 +52,7 @@ int main(){
 	for(i=0;i<=1;i++){
 		obj[i].getdata();
 	}
-	for(i=0;i<=1;i++){
-		obj[0]=compare(obj[i],obj[i+1]);
-	}
+	compare(obj);
 	obj[0].display();
 
 return 0;
