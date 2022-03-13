@@ -3,24 +3,23 @@
 using namespace std;
 class x{
 	
+	int b;
 	public:
-			input(int x){
+			input(int b){
 				string name;
 				int salary;
 				cout<<"Enter the name of the employeee"<<endl;
 				getline(cin,name);
-				fflush;
+				fflush(stdin);
 				cout<<"Enter the salary"<<endl;
 				cin>>salary;
+				fflush(stdin);
 				return 0;
 			}
 };
 int main(){
-	int x=5;
-	int i=0;
-	for (i=0;i<=x;i++){
-		
-		returnn 0;
-	}
+	x obj;
+	obj.input(0);
+ 
 return 0;
 }

@@ -25,7 +25,7 @@ int main()
     //designing statement to imput amount
     float amount = 0;   
     cout << "enter amount:\n";
-    cin >> amount;
+    cin >> amount;l
 
     //creating if/else statement to convert for diffent money values
 
