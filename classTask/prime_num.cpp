@@ -2,6 +2,7 @@
 using namespace std;
 
 class Prime{
+	public:
 	int a;
 	public:
 		int getData ()
@@ -11,7 +12,8 @@ class Prime{
 			return a;
 
 		}
-		void over(int x){
+		void over(int x)
+		{
 			int i=0;
 			int b=0,count=0;
 			for(i=1;i<=x;i++){
@@ -30,7 +32,7 @@ class Prime{
 };
 int main(){
 	Prime obj;
-	obj.getData();
-	obj.over();
+	int c=obj.getData();
+	obj.over(c);
 	return 0;
 }
