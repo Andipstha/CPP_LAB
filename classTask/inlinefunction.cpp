@@ -2,10 +2,9 @@
 #include<iostream>
 using namespace std;
 class X{
-    int a;
     public:
         inline int result(){
-        int b;
+        int a,b;
         cout<<"Enter the number u want to add"<<endl;
         cin >> a>>b;
         int sum=a+b;
