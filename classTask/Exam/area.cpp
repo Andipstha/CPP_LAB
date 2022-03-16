@@ -23,6 +23,5 @@ int main(){
     cin >>l>>b;
     obj1.area(l, b);
     obj1.area(s); 
-    return 0;
-    
+    return 0; 
 }
