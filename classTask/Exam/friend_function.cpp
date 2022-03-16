@@ -15,16 +15,19 @@ class X
 };
 class Y{
 	public:
-	int y;
+	int b;
 	void getData(){
 		cout<<"Enter the number"<<endl;
-		cin>>y;
+		cin>>b;
 	}
-	friend void compare(X obj2,Y obj3);
+	friend void compare(X obj,Y obj1);
 };
-	void compare(X,Y){
-		if(){
-
+	void compare(X obj,Y obj1){
+		if(obj.a>obj1.b){
+			cout<<"The largest number is :-"<<obj.a<<endl;
+		}
+		else{
+			cout<<"The largest number is :-"<<obj1.b<<endl;
 		}
 		
 	}
@@ -33,6 +36,6 @@ int main(){
 	Y obj1;
 	obj.getData();
 	obj1.getData();
-	compare(obj.a,obj1.y);
+	compare(obj,obj1);
 
 }
