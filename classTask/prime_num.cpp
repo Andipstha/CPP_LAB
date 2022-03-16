@@ -1,35 +1,38 @@
 #include<iostream>
 using namespace std;
 
-int prime(int n);
-int main()
-{
-	int num;
-	cout<<"Enter the positive integer to check: ";
-	cin>>num;
-	
-//	prime();
-	prime(num);
-	return 0;
-}
-
-int prime(int n)
-{
-	int i,flag = 0;
-	for(i=2;i<n/2;i++)
-	{
-		if(n%i==0)
+class Prime{
+	public:
+	int a;
+	public:
+		int getData ()
 		{
-			flag==1;
-			break;
+			cout<<"Enter the number u want ko check"<<endl;
+			cin>>a;
+			return a;
+
 		}
-	}
-	if(flag==1)
-	{
-		cout<<n<<" is not a prime number";
-	}
-	else
-	{
-		cout<<n<<" is a prime number";
-	}
+		void over(int x)
+		{
+			int i=0;
+			int b=0,count=0;
+			for(i=1;i<=x;i++){
+				b=x%i;
+				if(b==0){
+					count ++;
+				}
+			}
+			if (count == 2){
+				cout<<"The number is prime number."<<endl;
+			}
+			else{
+				cout<<"The number is not a prime number."<<endl;
+			}
+		}
+};
+int main(){
+	Prime obj;
+	int c=obj.getData();
+	obj.over(c);
+	return 0;
 }
