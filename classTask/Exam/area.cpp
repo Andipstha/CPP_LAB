@@ -1,4 +1,4 @@
-//wap to overload a function named func area() which calculate a return area oa circle abd rectangle assume appropiriate buber nad type of argumnent and return type
+//wap to overload a function named func area() which calculate and return area of circle and rectangle assume appropriate number and type of argumnent and return type.
 #include<iostream>
 using namespace std;
 class X{
