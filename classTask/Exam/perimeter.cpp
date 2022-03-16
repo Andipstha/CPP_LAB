@@ -1,3 +1,4 @@
+//WAP to find perimeter or a square, rectangle and circle using function overloading.
 #include<iostream>
 using namespace std;
 class X{

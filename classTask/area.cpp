@@ -1,1 +1,0 @@
-//wap to overload a function named func area() which calculate a return area oa circle abd rectangle assume appropiriate buber nad type of argumnent and return type
