@@ -4,7 +4,6 @@ using namespace std;
 class Y;
 class X
 {
-	
 	friend class Y;
 	public:
 		int a;
@@ -29,7 +28,6 @@ class Y{
 		else{
 			cout<<"The largest number is :-"<<obj1.b<<endl;
 		}
-		
 	}
 int main(){
 	X obj;
@@ -37,5 +35,5 @@ int main(){
 	obj.getData();
 	obj1.getData();
 	compare(obj,obj1);
-
+	return 0;
 }
