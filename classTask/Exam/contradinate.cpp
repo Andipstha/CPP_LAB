@@ -1,3 +1,4 @@
+//1. WAP to contradinate two string by overloading binary operator'+'. (2012.Q3.a)
 #include<iostream>
 using namespace std;
 class X{
@@ -13,7 +14,7 @@ class X{
             getline(cin,caste);
         }
        int display(const X& obj){ //X operator ++(const X& obj){
-            commom = obj.name + /t obj.caste;
+            commom = obj.name + obj.caste;
             cout<<"The combined form is :-"<<commom<<endl;
             return 0;
         }
