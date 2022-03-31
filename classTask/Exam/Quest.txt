@@ -8,3 +8,4 @@
 7. WAP to add sum of 2 number using inline function.
 8. WAP to overload a function area()which calculate and return are of the circle and rectangle.
 9. WAP to find perimeter of square, rectangle and circle using function overloading. 
+10.WAP to convert sec into hrs,min and sec using basic to class conversion and by using constructor.
