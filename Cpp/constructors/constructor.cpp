@@ -18,6 +18,5 @@ class S
 
 int main(){
 	S obj(3,4);
-	//obj.add(0,0);
 	return 0;
 }

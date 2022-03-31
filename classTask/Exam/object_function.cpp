@@ -5,42 +5,37 @@ class X{
         int hr;
         int min;
     public:
-        X getData(){
-           
+        void getData()
+        {
+            flag:
             cout<<"Enter the hour >23hrs."<<endl;
             cin>>hr;
+            if(hr>23){
+                cout<<"Please enter the hour again."<<endl;
+                goto flag;
+            }
             cout<<"Enter the minutes >59min."<<endl;
             cin>>min;
-            return X;
         }
-        void add(const X &obj, const X&obj1){
-            int a,b,c;
-            a= obj.hr+obj1.hr;
+        void add(const X &obj, const X&obj1)
+        {
+            int a,b;
+            a=obj.hr+obj1.hr;
             b=obj.min+obj1.min;
-            /*if(b==60){
+            if(b==60){
                 b=0;
                 a++;
             }
-            else(
-                c++; 
-            )
-            if(a==24){
+            if(a>=24){
                 a=0;
             }
-            else{
-                c++;
-            }*/
             cout<<"The sum of "<<a<<":"<<b;
-           
-
         }
-
 };
 int main(){
     X obj,obj1,sum;
-    obj=obj.getData();
-    obj1=obj1.getData();
+    obj.getData();
+    obj1.getData();
     sum.add(obj,obj1);
-
-
-}
+    return 0;
+} 

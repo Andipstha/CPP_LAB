@@ -4,8 +4,8 @@ using namespace std;
 class X{
       public:
         string commom;
-          string name;
-            string caste;
+        string name;
+        string caste;
       public:
         void getData(){
             cout<<"Enter the name :-"<<endl;
