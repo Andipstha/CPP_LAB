@@ -22,7 +22,7 @@ int currConversion::rate=119;
 		cout<<"The converted currency is = "<<a<<endl;
 		return 0;
 	}
-main()
+int main()
 {
 	currConversion obj1;
 	int value;

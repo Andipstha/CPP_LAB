@@ -15,8 +15,6 @@ int main()
     int value;
     cout<<"Enter the number:";
     cin>>value;
-    
     obj1.details(value);
-
     return 0;
 }
