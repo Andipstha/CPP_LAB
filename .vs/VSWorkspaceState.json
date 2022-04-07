@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\classTask",
+    "\\classTask\\conversion"
   ],
-  "SelectedNode": "\\C:\\Users\\student3\\Source\\Repos\\CPP_LAB",
+  "SelectedNode": "\\classTask\\conversion\\km to m.cpp",
   "PreviewInSolutionExplorer": false
 }

@@ -13,8 +13,6 @@ X::X(int t){
 }
 void X::conversion(){
 	cout<<hh<<"hrs:"<<mm<<"minutes:"<<ss<<"sec"<<endl;
-
-	 
 }
 int main(){
 	int sec;
@@ -23,7 +21,5 @@ int main(){
 	X obj1=sec;
 	obj1.conversion();
 return 0;
-
-
 }
 
