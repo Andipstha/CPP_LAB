@@ -54,7 +54,7 @@ int main(){
 	for(i=0;i<=1;i++){
 		obj[i].getdata();
 	}
-	obj[i]=compare(obj[2]);
+	obj[i]=compare(obj);
 	obj[0].display();
 
 return 0;
