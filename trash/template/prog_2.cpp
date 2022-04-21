@@ -2,39 +2,43 @@
 #include<iostream>
 using namespace std;
 
-class Number
-{
+
 template <typename T>
-void sort(T getnum)	
-	T i,j,temp;
+T sort(T num)	
+{
+	T getnum[30];
+	T i=0,j=0,temp=0;
 	{
-		
-		for(i=1;i<=num;i++)
+		cout<<"Enter the number"<<endl;
+		for(i=0;i<num;i++)
 		{
-			for(int j=i;j<=i;j++)
+			cin>>getnum[i];
+		}
+		for(i=0;i<=num;i++)
+		{
+			for(int j=i+1;j<=num;j++)
 			{
-				if(getnum[i]<getnum[j])
+			if(getnum[i]>getnum[j])
 				{
-					temp[i]=getnum[i];
+					temp=getnum[i];
 					getnum[i]=getnum[j];
 					getnum[j]=temp;
 				}
-			}
-			
+			}	
 		}
 		
 	}
-};
+	for(i=0;i<num;i++)
+	{
+		cout<<getnum[i]<<" ";
+	}
+}
 int main()
 {
-	int num;
+	int num,result;
 	cout<<"Enter the value of n: "<<endl;
 	cin>>num;
-	cout<<"Enter the number"<<endl;
-	for(i=1;i<=num;i++)
-	{
-		cin>>getnum[i];
-	}
-	sort<int>(getnum);
+
+	result=sort<int>(num);
 	return 0;
 }
