@@ -25,12 +25,13 @@ class Employee
 			
 		}
 		friend Employee compare(Employee obj2[]){
-			int i;
+			int i,j;
 			Employee temp;
 			for(i=0;i<=1;i++){
-				if(obj2[i].salary<obj2[i+1].salary){
-					temp=obj2[i+1];
-					obj2[i+1]=obj2[i];
+				for(j=i+1;j<=1;j++)
+				if(obj2[i].salary<obj2[j].salary){
+					temp=obj2[j];
+					obj2[j]=obj2[i];
 					obj2[i]=temp;
 
 				}
@@ -47,12 +48,13 @@ class Employee
 };
 int main(){
 	Employee obj[2];
+	Employee objj;
 	int a=0;
 	int i=0;
 	for(i=0;i<=1;i++){
 		obj[i].getdata();
 	}
-	compare(obj);
+	obj[i]=compare(obj);
 	obj[0].display();
 
 return 0;
