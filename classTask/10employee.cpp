@@ -38,7 +38,7 @@ class Employee
 			return obj2[i];
 		}
 		void display(){
-			cout<<"The details of the student is:-"<<endl;
+			cout<<"The details of the Employee is:-"<<endl;
 			cout<<"NAME:-"<<name<<endl;
 			cout<<"ID:-"<<id<<endl;
 			cout<<"Salary:-"<<salary<<endl;
